@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f0f2f5, #ffffff);
+        }
+        .navbar {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #ffcc00;
+        }
+        .dashboard-section {
+            padding: 3rem 2rem;
+        }
+        .dashboard-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2d3e50;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #0056b3;
+        }
+        .card i {
+            font-size: 2.5rem;
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">LMS Admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-white" href="/">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container dashboard-section">
+        <h2>Admin Dashboard</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-users"></i>
+                        <h5 class="card-title mt-3">Manage Users</h5>
+                        <p class="card-text">View, add, update, or delete student and faculty accounts.</p>
+                        <a href="/manage_users" class="btn btn-primary">Manage Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-book"></i>
+                        <h5 class="card-title mt-3">Manage Courses</h5>
+                        <p class="card-text">Create, update, or delete courses and assign faculty to them.</p>
+                        <a href="/manage_courses_admin" class="btn btn-primary">Manage Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line"></i>
+                        <h5 class="card-title mt-3">View Analytics</h5>
+                        <p class="card-text">Monitor system usage, student performance, and faculty efficiency.</p>
+                        <a href="/analytics" class="btn btn-primary">View Analytics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-question-circle"></i>
+                        <h5 class="card-title mt-3">Manage FAQs</h5>
+                        <p class="card-text">Add or update frequently asked questions for users.</p>
+                        <a href="/manage_faqs" class="btn btn-primary">Manage FAQs</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-database"></i>
+                        <h5 class="card-title mt-3">Database Management</h5>
+                        <p class="card-text">Access and maintain the LMS database for optimal performance.</p>
+                        <a href="/database_management" class="btn btn-primary">Manage Database</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 
+ LMS. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

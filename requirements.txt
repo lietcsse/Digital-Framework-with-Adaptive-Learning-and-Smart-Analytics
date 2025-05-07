@@ -1,0 +1,9 @@
+fastapi_restful==0.6.0
+Flask==2.0.3
+Flask_Bcrypt==1.0.1
+Flask_SQLAlchemy==2.5.1
+numpy==1.25.2
+scikit_learn==1.0.2
+tensorflow==2.8.0
+tensorflow_intel
+Werkzeug==2.2.2

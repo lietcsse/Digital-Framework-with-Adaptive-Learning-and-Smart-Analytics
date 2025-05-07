@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Learning Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #eef6f9, #ffffff);
+        }
+
+        .navbar {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: #ffcc00;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 2rem;
+            background-color: #eef6f9;
+        }
+
+        .header-section .content {
+            max-width: 50%;
+        }
+
+        .header-section .content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2d3e50;
+        }
+
+        .header-section .content p {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            color: #596e79;
+        }
+
+        .header-section .content .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+        }
+
+        .features-section {
+            padding: 3rem 2rem;
+        }
+
+        .features-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2d3e50;
+        }
+
+        .feature-card {
+            background-color: #ffffff;
+            border: 1px solid #e3e6ea;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h5 {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: #2d3e50;
+        }
+
+        .feature-card img {
+            max-width: 80px;
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .registration-container {
+            max-width: 600px;
+            margin: 5rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-container h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 2rem;
+        }
+
+        .registration-container .form-label {
+            font-size: 1.1rem;
+            color: #2d3e50;
+        }
+
+        .registration-container .btn {
+            background-color: #0056b3;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .registration-container .btn:hover {
+            background-color: #004085;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Intelligent LMS</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/student_register"><i class="fas fa-user-graduate"></i> Student Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/faculty_register"><i class="fas fa-chalkboard-teacher"></i> Faculty Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container registration-container">
+        <h2><i class="fas fa-chalkboard-teacher"></i> Faculty Registration</h2>
+        <form name="facultyForm" onsubmit="return validateFacultyForm()" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="faculty_id" class="form-label">Faculty ID</label>
+                <input type="text" id="faculty_id" name="faculty_id" class="form-control" placeholder="Enter your Faculty ID" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Create a password" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+                <label for="course" class="form-label">Course</label>
+                <input type="text" id="course" name="course" class="form-control" placeholder="Enter your course specialization" required>
+            </div>
+            <div class="mb-3">
+                <label for="profile_picture" class="form-label">Profile Picture</label>
+                <input type="file" id="profile_picture" name="profile_picture" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Intelligent LMS. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function validateFacultyForm() {
+            const phone = document.getElementById('phone').value;
+            if (!/^[0-9]{10}$/.test(phone)) {
+                alert('Phone number must be 10 digits.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

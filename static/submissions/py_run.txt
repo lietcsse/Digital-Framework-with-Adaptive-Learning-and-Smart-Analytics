@@ -1,0 +1,52 @@
+1. Then Install requirements.txt with following COMMAND:-
+    pip install -r requirements.txt
+
+2. create superuser by following COMMAND in your root directory:-
+    python manage.py createsuperuser
+
+
+3. Then start your server by typing following COMMAND:-
+     python manage.py runserver
+
+NOTE:- If you are adding some model in models.py or changing something don't forget to make migrations
+
+       python manage.py makemigrations
+      
+
+       python manage.py migrate
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+py manage.py runserver
+pause;
+----------------------------------------
+
+pip install -r requirements.txt
+
+
+pip install urllib3==1.26.6 
+
+df = pd.read_csv(fp, index_col="Ticker", error_bad_lines=False)
+
+
+haarcascade_frontalface_default
+
+
+pip install pycryptodome
+ 
+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
+
+==============================================================================================
+
+cloudkeys1@gmail.com
+cloudkeys@12345
+xwtkukcruopujueo 
+
+
+====== performence of machine learning based techniques spectrum sencing  in mobile 
+
+
+crjayshree25@gmail.com
+
+>>> import nltk
+>>> nltk.download('punkt')cognitive radio networks

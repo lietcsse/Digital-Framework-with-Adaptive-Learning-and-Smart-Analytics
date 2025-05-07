@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Learning Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #eef6f9, #ffffff);
+        }
+        .navbar {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #ffcc00;
+        }
+        .header-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 2rem;
+            background-color: #eef6f9;
+        }
+        .header-section .content {
+            max-width: 50%;
+        }
+        .header-section .content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2d3e50;
+        }
+        .header-section .content p {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            color: #596e79;
+        }
+        .header-section .content .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .header-section .content .btn:hover {
+            background-color: #388e3c;
+        }
+        .features-section {
+            padding: 3rem 2rem;
+        }
+        .features-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2d3e50;
+        }
+        .feature-card {
+            background-color: #ffffff;
+            border: 1px solid #e3e6ea;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h5 {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: #2d3e50;
+        }
+        .feature-card img {
+            max-width: 80px;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #ffcc00;
+        }
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column;
+            }
+            .header-section .content {
+                max-width: 100%;
+                text-align: center;
+            }
+            .header-section img {
+                margin-top: 2rem;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Intelligent LMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/student_register"><i class="fas fa-user-graduate"></i> Student Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/faculty_register"><i class="fas fa-chalkboard-teacher"></i> Faculty Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-section">
+        <div class="content">
+            <h1>Welcome to the Intelligent Learning Management System</h1>
+            <p>A platform designed for collaborative learning, empowering students and educators with cutting-edge tools.</p>
+            <a href="/login" class="btn">Get Started</a>
+        </div>
+        <img src="./static/images/bg1.jpg" alt="Online Learning Animation" style="max-width: 40%; border-radius: 8px;">
+    </header>
+
+    <section class="features-section">
+        <h2>Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-user-graduate fa-3x" style="color: #4CAF50;"></i>
+                    <h5>For Students</h5>
+                    <p>Register, view assignments, and track your progress effortlessly.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher fa-3x" style="color: #4CAF50;"></i>
+                    <h5>For Faculty</h5>
+                    <p>Manage courses, interact with students, and monitor performance.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-user-shield fa-3x" style="color: #4CAF50;"></i>
+                    <h5>For Admins</h5>
+                    <p>Oversee the system, manage users, and analyze data trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Intelligent LMS. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

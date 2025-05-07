@@ -1,0 +1,252 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hi there",
+        "Hello chatbot",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! I'm your computer science assistant. How can I help you today?",
+        "Hi there! What topic or programming language do you need assistance with?",
+        "Hey! Let me know your queries about computer science subjects or programming."
+      ]
+    },
+    {
+      "tag": "html",
+      "patterns": [
+        "What is HTML?",
+        "Define HTML",
+        "Explain HTML",
+        "What are HTML tags?",
+        "How to create a hyperlink in HTML?"
+      ],
+      "responses": [
+        "HTML stands for HyperText Markup Language and is used to structure web content.",
+        "HTML tags are the building blocks of HTML, used to create elements on a webpage.",
+        "You can create a hyperlink using the <a> tag: <a href='URL'>Link Text</a>."
+      ]
+    },
+    {
+      "tag": "css",
+      "patterns": [
+        "What is CSS?",
+        "Define CSS",
+        "Explain CSS",
+        "What are CSS selectors?",
+        "How to style text in CSS?"
+      ],
+      "responses": [
+        "CSS stands for Cascading Style Sheets and is used to style the appearance of web pages.",
+        "CSS selectors are patterns used to select and style specific elements on a web page.",
+        "You can style text using CSS properties like font-size, color, and font-family."
+      ]
+    },
+    {
+      "tag": "javascript",
+      "patterns": [
+        "What is JavaScript?",
+        "Define JavaScript",
+        "Explain JavaScript",
+        "What are JavaScript functions?",
+        "How to create a function in JavaScript?"
+      ],
+      "responses": [
+        "JavaScript is a scripting language used to create dynamic and interactive web content.",
+        "A JavaScript function is a block of code designed to perform a particular task.",
+        "You can create a function in JavaScript using the function keyword: function myFunction() { // code }"
+      ]
+    },
+    {
+      "tag": "java",
+      "patterns": [
+        "What is Java?",
+        "Define Java",
+        "Explain Java",
+        "What are Java classes?",
+        "How to create a class in Java?"
+      ],
+      "responses": [
+        "Java is a high-level, object-oriented programming language widely used for development.",
+        "Java classes are blueprints for creating objects, containing fields and methods.",
+        "You can create a class in Java using the class keyword: public class MyClass { // fields and methods }"
+      ]
+    },
+    {
+      "tag": "mysql",
+      "patterns": [
+        "What is MySQL?",
+        "Define MySQL",
+        "Explain MySQL",
+        "What are MySQL tables?",
+        "How to create a table in MySQL?"
+      ],
+      "responses": [
+        "MySQL is a popular open-source relational database management system.",
+        "MySQL tables store data in rows and columns.",
+        "You can create a table in MySQL using: CREATE TABLE table_name (column1 datatype, column2 datatype, ...);"
+      ]
+    },
+    {
+      "tag": "mongodb",
+      "patterns": [
+        "What is MongoDB?",
+        "Define MongoDB",
+        "Explain MongoDB",
+        "What are MongoDB collections?",
+        "How to create a collection in MongoDB?"
+      ],
+      "responses": [
+        "MongoDB is a NoSQL database that uses a document-oriented data model.",
+        "MongoDB collections are similar to tables in relational databases, used to store documents.",
+        "You can create a collection in MongoDB by simply inserting a document into it: db.collection_name.insert({ key: value });"
+      ]
+    },
+    {
+      "tag": "introduction_to_cs",
+      "patterns": [
+        "What is computer science?",
+        "Explain basic concepts of computer science",
+        "What are programming fundamentals?"
+      ],
+      "responses": [
+        "Computer science is the study of computers and computational systems, focusing on software, hardware, and algorithms.",
+        "Programming fundamentals include concepts like variables, data types, control structures, and basic algorithms."
+      ]
+    },
+    {
+      "tag": "data_structures",
+      "patterns": [
+        "What are data structures?",
+        "Explain arrays and linked lists",
+        "What is a binary tree?",
+        "Define sorting algorithms"
+      ],
+      "responses": [
+        "Data structures organize and store data efficiently, including arrays, linked lists, stacks, and queues.",
+        "A binary tree is a hierarchical structure where each node has at most two children.",
+        "Sorting algorithms like quicksort and mergesort arrange data in a specific order."
+      ]
+    },
+    {
+      "tag": "math_for_cs",
+      "patterns": [
+        "What is discrete mathematics?",
+        "Explain probability in computer science",
+        "What is linear algebra used for?"
+      ],
+      "responses": [
+        "Discrete mathematics involves study of mathematical structures that are discrete, such as graphs and integers.",
+        "Probability in computer science is used in algorithms like Monte Carlo simulations.",
+        "Linear algebra is essential in machine learning for operations like matrix manipulations."
+      ]
+    },
+    {
+      "tag": "os",
+      "patterns": [
+        "What is an operating system?",
+        "Explain process management",
+        "What are file systems?"
+      ],
+      "responses": [
+        "An operating system manages hardware and software resources, acting as an interface between users and the computer.",
+        "Process management involves scheduling and execution of processes.",
+        "File systems organize and manage data storage on a disk."
+      ]
+    },
+    {
+      "tag": "networks",
+      "patterns": [
+        "What are computer networks?",
+        "Explain protocols",
+        "What is cybersecurity?"
+      ],
+      "responses": [
+        "Computer networks allow devices to communicate and share resources using protocols like TCP/IP.",
+        "Cybersecurity involves protecting systems and data from cyber threats."
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "What is artificial intelligence?",
+        "Explain expert systems",
+        "What is natural language understanding?"
+      ],
+      "responses": [
+        "AI simulates human intelligence in systems to perform tasks like reasoning, learning, and decision-making.",
+        "Expert systems use knowledge bases to make decisions in specific domains.",
+        "Natural Language Understanding enables machines to interpret and process human language."
+      ]
+    },
+    {
+      "tag": "ml",
+      "patterns": [
+        "What is machine learning?",
+        "Explain supervised learning",
+        "What is reinforcement learning?"
+      ],
+      "responses": [
+        "Machine learning is a branch of AI that enables systems to learn from data and make predictions.",
+        "Supervised learning uses labeled data to train models.",
+        "Reinforcement learning trains models through rewards and penalties for actions taken."
+      ]
+    },
+    {
+      "tag": "web_dev",
+      "patterns": [
+        "What is web development?",
+        "Explain frontend and backend development",
+        "What is HTML used for?"
+      ],
+      "responses": [
+        "Web development involves building websites and web applications, including frontend (UI/UX) and backend (server-side) components.",
+        "Frontend technologies include HTML, CSS, and JavaScript, while backend includes databases and server-side logic."
+      ]
+    },
+    {
+      "tag": "cloud_computing",
+      "patterns": [
+        "What is cloud computing?",
+        "Explain virtualization",
+        "What are AWS and Azure?"
+      ],
+      "responses": [
+        "Cloud computing delivers computing resources over the internet, including storage and processing power.",
+        "Virtualization enables multiple virtual systems to run on a single physical system.",
+        "AWS and Azure are popular cloud platforms offering a variety of services."
+      ]
+    },
+    {
+      "tag": "blockchain",
+      "patterns": [
+        "What is blockchain?",
+        "Explain cryptocurrency",
+        "What are smart contracts?"
+      ],
+      "responses": [
+        "Blockchain is a decentralized ledger technology used to record transactions securely.",
+        "Cryptocurrency is a digital currency that uses blockchain for secure transactions.",
+        "Smart contracts are self-executing contracts with terms directly written into code."
+      ]
+    },
+    {
+      "tag": "cybersecurity",
+      "patterns": [
+        "What is ethical hacking?",
+        "Explain cryptography",
+        "What are common cyber threats?"
+      ],
+      "responses": [
+        "Ethical hacking identifies vulnerabilities in systems to improve security.",
+        "Cryptography secures data by converting it into a code format.",
+        "Common cyber threats include malware, phishing, and ransomware."
+      ]
+    }
+  ]
+}
